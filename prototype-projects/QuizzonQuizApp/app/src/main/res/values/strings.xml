@@ -1,3 +1,7 @@
 <resources>
-    <string name="app_name">Quizzon(Quiz App)</string>
+    <string name="app_name">Quizzon</string>
+    <string name="welcome">Welcome</string>
+    <string name="enter_your_name">Enter Your Name</string>
+    <string name="please_enter_your_name">Please enter your name</string>
+    <string name="start">Start</string>
 </resources>
