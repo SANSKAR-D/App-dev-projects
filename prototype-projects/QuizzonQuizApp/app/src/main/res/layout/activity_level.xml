@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UI.LevelActivity"
+    android:background="@drawable/levelbg">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#0C000000">
+
+    </View>
+    <View
+        android:layout_width="260dp"
+        android:layout_height="400dp"
+        android:layout_marginBottom="99dp"
+        android:layout_marginEnd="35dp"
+        android:background="@drawable/viewbox"
+        android:layout_gravity="center"
+        >
+
+    </View>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="12dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/difficulty"
+        android:textStyle="bold"
+        android:textSize="40sp"
+        android:textColor="#BEA182"
+        android:translationX="-35dp"
+        android:translationY="-110dp"
+        android:shadowColor="#33000000"
+        android:shadowDy="2"
+        android:shadowRadius="4"
+        />
+
+    <Button
+        android:layout_width="150dp"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/levelEasy"
+        android:text="@string/easy"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:backgroundTint="#282626"
+        android:translationX="-35dp"
+        android:translationY="-90dp"
+        android:elevation="10dp"
+        app:rippleColor = "#C7C4C4" />
+    <Button
+        android:layout_width="150dp"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/levelMedium"
+        android:text="@string/medium2"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:backgroundTint="#282626"
+        android:translationX="-35dp"
+        android:translationY="-80dp"
+        android:elevation="10dp"
+        app:rippleColor = "#C7C4C4"/>
+    <Button
+        android:layout_width="150dp"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/levelHard"
+        android:text="@string/hard2"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:backgroundTint="#282626"
+        android:translationX="-35dp"
+        android:translationY="-70dp"
+        android:elevation="10dp"
+        app:rippleColor = "#C7C4C4"/>
+    </LinearLayout>
+</FrameLayout>

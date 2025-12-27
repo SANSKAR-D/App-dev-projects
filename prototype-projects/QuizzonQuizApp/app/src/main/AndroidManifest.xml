@@ -12,6 +12,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.QuizzonQuizApp">
         <activity
+            android:name=".UI.QuestionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".UI.LevelActivity"
+            android:exported="false"
+            android:theme="@style/Theme.QuizzonQuizApp.NoActionBar" />
+        <activity
             android:name=".MainActivity"
             android:exported="true"
             android:theme="@style/Theme.QuizzonQuizApp.NoActionBar"
