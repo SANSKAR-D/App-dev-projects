@@ -10,4 +10,6 @@
     <string name="medium2">Medium</string>
     <string name="hard2">Hard</string>
     <string name="difficulty">Difficulty</string>
+    <string name="easylevelbg">easylevelbg</string>
+    <string name="level_easy">LEVEL - EASY</string>
 </resources>
