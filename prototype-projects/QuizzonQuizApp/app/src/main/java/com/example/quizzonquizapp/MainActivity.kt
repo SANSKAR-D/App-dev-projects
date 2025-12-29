@@ -9,6 +9,7 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import com.example.quizzonquizapp.Constant.Questions
 import com.example.quizzonquizapp.UI.LevelActivity
 
 class MainActivity : AppCompatActivity() {
@@ -27,6 +28,7 @@ class MainActivity : AppCompatActivity() {
         startButton.setOnClickListener {
             if(!inputName.text.isEmpty()){
                 Intent(this@MainActivity, LevelActivity::class.java).also{
+                    it.putExtra(Questions.User_Name,inputName.text.toString())
                     startActivity(it)
                 }
                 finish()

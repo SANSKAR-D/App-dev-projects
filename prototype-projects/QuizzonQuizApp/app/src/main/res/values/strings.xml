@@ -12,4 +12,10 @@
     <string name="difficulty">Difficulty</string>
     <string name="easylevelbg">easylevelbg</string>
     <string name="level_easy">LEVEL - EASY</string>
+    <string name="next">Next</string>
+    <string name="check">Check</string>
+    <string name="finish">Finish</string>
+    <string name="level_medium">Level - Medium</string>
+    <string name="level_hard">Level - HARD</string>
+    <string name="congratulations">Congratulations ! %1$s</string>
 </resources>
