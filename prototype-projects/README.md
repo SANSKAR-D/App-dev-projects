@@ -1,11 +1,8 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>1.Quizzon - Quiz App</title>
-</head>
 <body>
 
-<h1>📚 Quizzon – Quiz App</h1>
+<h1>1. 📚 Quizzon – Quiz App</h1>
 <p>Quizzon is a fun and interactive quiz app built to test knowledge through exciting questions and a clean UI. Enjoy smooth navigation, instant scoring, and a great quiz experience!</p>
 
 <hr>
@@ -66,4 +63,5 @@ git clone https://github.com/SANSKAR-D/App-dev-projects/edit/main/prototype-proj
 
 </body>
 </html>
+
 
