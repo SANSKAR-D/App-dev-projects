@@ -10,6 +10,10 @@ android {
     }
 
     defaultConfig {
+        ndk {
+            abiFilters += listOf("armeabi-v7a",
+            "arm64-v8a","x86","x86_64")
+        }
         applicationId = "com.example.quizzonquizapp"
         minSdk = 24
         targetSdk = 36
@@ -29,11 +33,11 @@ android {
         }
     }
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_11
-        targetCompatibility = JavaVersion.VERSION_11
+        sourceCompatibility = JavaVersion.VERSION_17
+        targetCompatibility = JavaVersion.VERSION_17
     }
     kotlinOptions {
-        jvmTarget = "11"
+        jvmTarget = "17"
     }
 }
 
