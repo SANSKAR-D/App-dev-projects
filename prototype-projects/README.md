@@ -13,7 +13,7 @@
 <h2>📱 Screenshots</h2>
 
 <div style="display: flex; gap: 20px;">
-  <img src="QuizzonQuizApp/app/src/main/res/drawable/head.jpeg" alt="Home Screen" width="250">
+  <img src="QuizzonQuizApp/app/src/main/res/drawable/home.jpeg" alt="Home Screen" width="250">
   <img src="QuizzonQuizApp/app/src/main/res/drawable/quiz.jpeg" alt="Quiz Screen" width="250">
 </div>
 
@@ -66,3 +66,4 @@ git clone https://github.com/SANSKAR-D/App-dev-projects/edit/main/prototype-proj
 
 </body>
 </html>
+
