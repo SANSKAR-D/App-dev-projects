@@ -8,133 +8,142 @@
     tools:context=".MainActivity"
     android:orientation="vertical">
 
-    <LinearLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:layout_above="@id/l2"
+        android:id="@+id/l1">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/gallery1"
+            android:contentDescription="@string/todo" />
 
         <com.example.imaginx.DrawingView
             android:id="@+id/drawing_view"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/gallery1" />
 
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:orientation="vertical">
-
+    </androidx.constraintlayout.widget.ConstraintLayout>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:gravity="center_horizontal">
+        android:gravity="center"
+        android:id="@+id/l2"
+        android:layout_above="@id/l3">
 
         <ImageButton
             android:id="@+id/orange"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:contentDescription="@string/todo"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="10dp"
+            android:contentDescription = "@string/todo"
             android:scaleType="fitCenter"
-            android:padding="10dp"
-            android:src="@drawable/orange"/>
+            android:background="@drawable/orange"/>
         <ImageButton
             android:id="@+id/purple"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="10dp"
             android:contentDescription="@string/todo"
             android:scaleType="fitXY"
-            android:padding="10dp"
-            android:src="@drawable/purple_bg"/>
+            android:background="@drawable/purple_bg"/>
         <ImageButton
             android:id="@+id/red"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="10dp"
             android:contentDescription="@string/todo"
             android:scaleType="fitXY"
-            android:padding="10dp"
-            android:src="@drawable/red"/>
+            android:background="@drawable/red"/>
         <ImageButton
             android:id="@+id/yellow"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="10dp"
             android:contentDescription="@string/todo"
             android:scaleType="fitXY"
-            android:padding="10dp"
-            android:src="@drawable/yellow"/>
+            android:background="@drawable/yellow"/>
         <ImageButton
             android:id="@+id/green"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="10dp"
             android:contentDescription="@string/todo"
             android:scaleType="fitXY"
-            android:padding="10dp"
-            android:src="@drawable/green"/>
+            android:background="@drawable/green"/>
         <ImageButton
             android:id="@+id/cyan"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="10dp"
             android:contentDescription="@string/todo"
             android:scaleType="fitXY"
-            android:padding="10dp"
-            android:src="@drawable/cyan"/>
+            android:background="@drawable/cyan"/>
         <ImageButton
             android:id="@+id/blue"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="10dp"
             android:contentDescription="@string/todo"
             android:scaleType="fitXY"
-            android:padding="10dp"
-            android:src="@drawable/blue"/>
+            android:background="@drawable/blue"/>
     </LinearLayout>
     <LinearLayout
+        android:id="@+id/l3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:gravity="center">
+        android:gravity="center"
+        android:layout_alignParentBottom="true">
 
         <ImageButton
             android:id="@+id/brush_button"
-            android:layout_width="60dp"
-            android:layout_height="60dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
             android:contentDescription="@string/todo"
             android:scaleType="fitXY"
-            android:src="@drawable/brush"
+            android:src="@drawable/brushsize"
             android:layout_margin="10dp"/>
         <ImageButton
             android:id="@+id/gallery"
-            android:layout_width="60dp"
-            android:layout_height="60dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
             android:contentDescription="@string/todo"
             android:scaleType="fitXY"
             android:layout_margin="10dp"
             android:src="@drawable/gallery"/>
         <ImageButton
             android:id="@+id/save"
-            android:layout_width="60dp"
-            android:layout_height="60dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
             android:contentDescription="@string/todo"
             android:scaleType="fitXY"
             android:layout_margin="10dp"
             android:src="@drawable/save"/>
         <ImageButton
-            android:id="@+id/erase"
-            android:layout_width="60dp"
-            android:layout_height="60dp"
+            android:id="@+id/color"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
             android:contentDescription="@string/todo"
             android:scaleType="fitXY"
             android:layout_margin="10dp"
-            android:src="@drawable/erase"/>
+            android:src="@drawable/brush"/>
         <ImageButton
             android:id="@+id/undo"
-            android:layout_width="60dp"
-            android:layout_height="60dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
             android:contentDescription="@string/todo"
             android:scaleType="fitXY"
             android:layout_margin="10dp"
             android:src="@drawable/undo"/>
-    </LinearLayout>
     </LinearLayout>
 
 </RelativeLayout>

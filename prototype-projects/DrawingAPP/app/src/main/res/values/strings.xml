@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">Imaginx</string>
     <string name="todo">todo</string>
+    <string name="dialog_yes">dialog_yes</string>
 </resources>

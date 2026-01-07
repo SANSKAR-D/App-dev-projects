@@ -17,6 +17,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.core.graphics.createBitmap
+import androidx.core.graphics.toColorInt
 
 class DrawingView(context: Context,attrs : AttributeSet) : View(context, attrs){
     private lateinit var drawPath : FingerPath
@@ -51,10 +52,10 @@ class DrawingView(context: Context,attrs : AttributeSet) : View(context, attrs){
 
             MotionEvent.ACTION_MOVE->{
                 drawPath.lineTo(touchX!!,touchY!!)
-                paths.add(drawPath)
             }
 
             MotionEvent.ACTION_UP->{
+                paths.add(drawPath)
                 drawPath = FingerPath(color,brushSize)
             }
             else -> return false
@@ -95,6 +96,22 @@ class DrawingView(context: Context,attrs : AttributeSet) : View(context, attrs){
             newSize,resources.displayMetrics
         )
         drawPaint.strokeWidth = brushSize
+    }
+    fun setColor(newColor : Any){
+        if(newColor is String){
+            color = newColor.toColorInt()
+            drawPaint.color = color
+        }else{
+            color = newColor as Int
+            drawPaint.color = color
+        }
+
+    }
+    fun undoPath(){
+        if(paths.isNotEmpty()){
+            paths.removeAt(paths.size-1)
+            invalidate()
+        }
     }
     internal inner class FingerPath(var color: Int, var brushThickness: Float) : Path()
 }
